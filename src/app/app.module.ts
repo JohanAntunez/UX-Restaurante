@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MenubarModule } from 'primeng/menubar';
+import {FormsComponent} from './components/forms/forms.component';
 
 
 
@@ -13,6 +14,7 @@ import { MenubarModule } from 'primeng/menubar';
     AppComponent,
     FooterComponent,
     HeaderComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
