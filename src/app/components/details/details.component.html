@@ -1,0 +1,87 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade show fontStyles" id="exampleModal" tabindex="-1" style="display: block;"  aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog"> -->
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="row" style="position: relative;">
+                <button type="button" class="btnCloseDetails" data-bs-dismiss="modal" aria-label="Close">X</button>
+                <div class="col-12 col-md-4 d-flex align-items-center">
+                    <div id="carouselDetails" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner carouselSpace d-flex align-items-center">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                          <img src="assets/img/detail1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="assets/img/detail2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="assets/img/detail3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDetails" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselDetails" data-bs-slide="next">
+                        <span class="carousel-control-next-icon shadowControllers" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Ensalada de arroz con pollo asado</h2>
+                        </div>
+                        <div class="col-12 ">
+                            <span>El arroz cocido con grano suelto constituye una excelente base para enriquecer y variar nuestro repertorio de ensaladas. El basmati o largo es perfecto, aunque también nos podemos apañar con un arroz estándar que no sea muy glutinoso y esté cocido al dente, con un puntito incluso crujiente.</span>
+                        </div>
+                        <div class="col-12 my-4">
+                            <div class="row">
+                                <div class="col-3">
+                                    <span class="muted">$200.0</span>
+                                    <span style="display: inline;">$170.0 <p style="display: inline;" class="redColor">-15%</p></span>
+                                </div>
+                                <div class="offset-3 col-6">
+                                    <span class="muted">Cantidad <p style="display: inline;" class="redColor">*</p></span>
+                                    <select class="form-select selectStyles"  aria-label="size 3 select example"
+                                    style="text-align-last: center;">
+                                        <option selected value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button type="button" class="btn" id="buyNow">
+                              <div class="d-flex align-items-center">
+                                <mat-icon>payment</mat-icon>Comprar ahora
+                              </div>
+                            </button>
+                            <button type="button" class="btn" id="addToTheCart">
+                              <div class="d-flex align-items-center">
+                                <mat-icon>shopping_cart</mat-icon>Añadir al carrito
+                              </div>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

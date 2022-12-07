@@ -1,0 +1,113 @@
+.selectStyles{
+   box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.1);
+}
+.selectStyles:hover{
+   box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.2);
+   cursor: pointer;
+}
+@media screen and (min-width: 1000px) {
+   .fontStyles{
+      font-family: "Montserrat";
+      font-weight: 200;
+      font-size: 1.3rem;
+   }
+   .fontStyles h2{
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size:2rem;
+   }
+   .fontStyles p, .fontStyles span, .fontStyles option{
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      display: block;
+      text-align: justify;
+   }
+   .carousel .carousel-indicators button {
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 100%;
+   }
+   
+   .carousel-indicators {
+      bottom: -3rem;
+      background-color: #ffffff;
+      border: 1px solid #c6c6c6;
+      box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.05);
+      border-radius: 5%;
+   }
+
+   .carousel-indicators:hover {
+      box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.15);
+   }
+   
+   .carouselSpace{
+      width: 100%;
+      height: 20rem;
+      margin-bottom: 1rem;
+      border-radius: 5%;
+   }
+
+   .btnCloseDetails{
+      position: absolute;
+      top: -25px;
+      right: -20px;
+      background-color: #ffffff;
+      border: 1px solid #f16c7a;
+      box-shadow:  0.3em 0.3em 1em rgba(0, 0, 0, 0.1);
+      border-radius: 5%;
+      width: 40px;
+      height: 40px;
+   }
+   
+   .btnCloseDetails:hover{
+      background-color: #ec5060;
+      border-color: #ec5060;
+      border: 1px solid #f16c7a;
+      box-shadow: 0.3em 0.3em 1.5em rgba(0, 0, 0, 0.2);
+      color: #ffffff;
+   }
+
+   .muted{
+      font-size: .9rem !important;
+      color: #d9d9d9;
+   }
+   .redColor{
+      color: #ec5060;
+   }
+   #buyNow{
+      background-color: #ffffff;
+      border: 1px solid #4fcb7b;
+      box-shadow: 0.3em 0.3em 1.5em rgba(0, 0, 0, 0.1);
+   }
+   #buyNow:hover{
+      background-color: #1ac858;
+      border: 1px solid #1ac858;
+      box-shadow: 0.3em 0.3em 1.5em rgba(0, 0, 0, 0.2);
+      color: #ffffff;
+   }
+   #addToTheCart{
+      background-color: #ffffff;
+      border: 1px solid #6cb9f1;
+      box-shadow: 0.3em 0.3em 1.5em rgba(0, 0, 0, 0.1);
+   }
+   #addToTheCart:hover{
+      background-color: #56aff0;
+      border: 1px solid #56aff0;
+      box-shadow: 0.3em 0.3em 1.5em rgba(0, 0, 0, 0.2);
+      color: #ffffff;
+   }
+
+   .modal-content{
+      animation-name: example;
+      animation-duration: 5.3s;
+   }
+    
+    @keyframes example {
+      0%   {transform: translate(30%) translateZ(600px) rotate(10deg); }
+      100% {transform: translate(0%) translateZ(0) rotate(0deg);}
+    }
+   
+
+}
