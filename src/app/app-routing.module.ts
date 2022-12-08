@@ -1,3 +1,4 @@
+import { InboxEmailComponent } from './components/inbox-email/inbox-email.component';
 import { DetailsComponent } from './components/details/details.component';
 import { Error500Component } from './components/error500/error500.component';
 import { Error403Component } from './components/error403/error403.component';
@@ -21,8 +22,11 @@ const routes: Routes = [
   {
     path:'details',
     component: DetailsComponent
+  },
+  {
+    path:'inboxEmail',
+    component: InboxEmailComponent
   }
-  
 ];
 
 @NgModule({

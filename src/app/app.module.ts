@@ -10,6 +10,7 @@ import { Error403Component } from './components/error403/error403.component';
 import { Error500Component } from './components/error500/error500.component';
 import { DetailsComponent } from './components/details/details.component';
 import { MatIconModule} from '@angular/material/icon';
+import { InboxEmailComponent } from './components/inbox-email/inbox-email.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { MatIconModule} from '@angular/material/icon';
     Error403Component,
     Error500Component,
     DetailsComponent,
+    InboxEmailComponent,
   ],
   imports: [
     BrowserModule,

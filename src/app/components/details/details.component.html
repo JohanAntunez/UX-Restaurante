@@ -4,7 +4,7 @@
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade fontStyles" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <!-- <div class="modal fade show fontStyles" id="exampleModal" tabindex="-1" style="display: block;"  aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog"> -->
     <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
       <div class="modal-content">
@@ -19,7 +19,7 @@
                         <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="2" aria-label="Slide 3"></button>
                       </div>
                       <div class="carousel-inner carouselSpace d-flex align-items-center">
-                        <div class="carousel-item active" data-bs-interval="2000">
+                        <div class="carousel-item active" data-bs-interval="2000" style="object-fit: contain;">
                           <img src="assets/img/detail1.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
@@ -45,7 +45,9 @@
                             <h2>Ensalada de arroz con pollo asado</h2>
                         </div>
                         <div class="col-12 ">
-                            <span>El arroz cocido con grano suelto constituye una excelente base para enriquecer y variar nuestro repertorio de ensaladas. El basmati o largo es perfecto, aunque también nos podemos apañar con un arroz estándar que no sea muy glutinoso y esté cocido al dente, con un puntito incluso crujiente.</span>
+                            <div id="detailDescription">
+                              <span>El arroz cocido con grano suelto constituye una excelente base para enriquecer y variar nuestro repertorio de ensaladas. El basmati o largo es perfecto, aunque también nos podemos apañar con un arroz estándar que no sea muy glutinoso y esté cocido al dente, con un puntito incluso crujiente.</span>
+                            </div>
                         </div>
                         <div class="col-12 my-4">
                             <div class="row">
@@ -65,7 +67,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
+                        <div class="col-12 d-grid gap-2 d-sm-flex justify-content-end">
                             <button type="button" class="btn" id="buyNow">
                               <div class="d-flex align-items-center">
                                 <mat-icon>payment</mat-icon>Comprar ahora
