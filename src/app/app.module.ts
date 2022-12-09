@@ -6,7 +6,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MenubarModule } from 'primeng/menubar';
 import {FormsComponent} from './components/forms/forms.component';
-
+import {checkoutComponent} from './components/checkout/checkout.component'
 
 
 @NgModule({
@@ -14,7 +14,8 @@ import {FormsComponent} from './components/forms/forms.component';
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    FormsComponent
+    FormsComponent,
+    checkoutComponent
   ],
   imports: [
     BrowserModule,
