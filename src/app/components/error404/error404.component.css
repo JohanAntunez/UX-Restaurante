@@ -135,8 +135,8 @@
         position: absolute; 
         top:80px; 
         right: -450px;
-        width: 500px;
-        height: 550px;
+        width: 475px;
+        height: 525px;
         z-index: 10;
         animation: float 6s ease-in-out infinite;
     }
