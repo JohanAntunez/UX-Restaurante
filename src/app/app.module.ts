@@ -11,6 +11,7 @@ import { Error500Component } from './components/error500/error500.component';
 import { DetailsComponent } from './components/details/details.component';
 import { MatIconModule} from '@angular/material/icon';
 import { InboxEmailComponent } from './components/inbox-email/inbox-email.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { InboxEmailComponent } from './components/inbox-email/inbox-email.compon
     Error500Component,
     DetailsComponent,
     InboxEmailComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
