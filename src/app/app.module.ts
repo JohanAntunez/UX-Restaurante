@@ -5,7 +5,12 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MenubarModule } from 'primeng/menubar';
-
+import { Error404Component } from './components/error404/error404.component';
+import { Error403Component } from './components/error403/error403.component';
+import { Error500Component } from './components/error500/error500.component';
+import { DetailsComponent } from './components/details/details.component';
+import { MatIconModule} from '@angular/material/icon';
+import { InboxEmailComponent } from './components/inbox-email/inbox-email.component';
 
 
 @NgModule({
@@ -13,11 +18,17 @@ import { MenubarModule } from 'primeng/menubar';
     AppComponent,
     FooterComponent,
     HeaderComponent,
+    Error404Component,
+    Error403Component,
+    Error500Component,
+    DetailsComponent,
+    InboxEmailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MenubarModule
+    MenubarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
