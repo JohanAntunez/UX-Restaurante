@@ -1,26 +1,50 @@
-<div class="header">
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white">
-    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Fvectores%2Ffood-truck%2F40&psig=AOvVaw3u6BH3RozUJnYEqVsfg0i0&ust=1670278612843000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPDcv-7-4PsCFQAAAAAdAAAAABAD" alt="" srcset="">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top"
+style="background-color: white">
   <div class="container-fluid">
-
+    <a class="navbar-brand" href="#">
+      <img
+      class="img-fluid"
+      src="../../../assets/img/springfood.png"
+      height="200"
+      width="200"
+    />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
         <li class="nav-item">
-          <!--ESTE LOGO ES DE EJEMPLO-->
-          <img src="https://www.shutterstock.com/image-vector/restaurant-logo-template-260nw-1254524410.jpg" class="img-logo">
+          <a class="nav-link active" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" href="#">Categorías</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Categorías</a>
+          <a class="nav-link active" href="#">Contáctanos</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Contáctanos</a>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="material-icons">notifications</i>          
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
         </li>
       </ul>
-
+        <button class="btn-login" type="button">Login</button>
     </div>
   </div>
 </nav>
-</div>
