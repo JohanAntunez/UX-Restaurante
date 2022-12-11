@@ -12,6 +12,8 @@ import { DetailsComponent } from './components/details/details.component';
 import { MatIconModule} from '@angular/material/icon';
 import { InboxEmailComponent } from './components/inbox-email/inbox-email.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { PricingComponent } from './components/pricing/pricing.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     DetailsComponent,
     InboxEmailComponent,
     SidebarComponent,
+    PricingComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
