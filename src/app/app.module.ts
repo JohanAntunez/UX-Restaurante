@@ -1,3 +1,4 @@
+import { NgChartsModule } from 'ng2-charts';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,7 @@ import { InboxEmailComponent } from './components/inbox-email/inbox-email.compon
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -29,12 +31,14 @@ import { LoginComponent } from './components/login/login.component';
     SidebarComponent,
     PricingComponent,
     LoginComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MenubarModule,
-    MatIconModule
+    MatIconModule,
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
