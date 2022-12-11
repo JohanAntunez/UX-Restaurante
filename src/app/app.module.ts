@@ -14,6 +14,7 @@ import { InboxEmailComponent } from './components/inbox-email/inbox-email.compon
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { LoginComponent } from './components/login/login.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { LoginComponent } from './components/login/login.component';
     SidebarComponent,
     PricingComponent,
     LoginComponent,
+    ChatComponent,
   ],
   imports: [
     BrowserModule,
