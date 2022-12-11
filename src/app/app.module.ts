@@ -14,7 +14,11 @@ import { InboxEmailComponent } from './components/inbox-email/inbox-email.compon
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { LoginComponent } from './components/login/login.component';
+<<<<<<< HEAD
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+=======
+import { ChatComponent } from './components/chat/chat.component';
+>>>>>>> a4e254ba6625afb739df66b0df7c63b5f9a477db
 
 
 @NgModule({
@@ -30,7 +34,11 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
     SidebarComponent,
     PricingComponent,
     LoginComponent,
+<<<<<<< HEAD
     UserProfileComponent,
+=======
+    ChatComponent,
+>>>>>>> a4e254ba6625afb739df66b0df7c63b5f9a477db
   ],
   imports: [
     BrowserModule,
