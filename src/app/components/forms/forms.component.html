@@ -72,7 +72,7 @@
           <label class="col-12" id="labelTitulo"> Input disable </label>
           <input class="col-12" id="inputFormBasic" type="text" value="Johan Kevin" disabled>
           <label class="col-12" id="labelTitulo"> Input con Placeholder </label>
-          <input class="col-12" id="inputFormBasic" type="text" placeholder="Johan Kevin" >
+          <input class="col-12" id="inputFormBasic" type="text" placeholder="Johan Kevin">
           <label class="col-12" id="labelTitulo"> Input con Readonly </label>
           <input class="col-12" id="inputFormBasic" type="text" value="Johan Kevin" Readonly>
           <label class="col-12" id="labelTitulo"> Input de Seleccionador </label>
@@ -81,9 +81,142 @@
             <option value="">Papas fritas</option>
             <option value="">Hot dog</option>
           </select>
+          <label class="col-12" id="labelTitulo"> Input de Seleccionador multiple </label>
+          <select class="form-select" id="inputFormBasic" multiple aria-label="multiple select example">
+            <option selected>Selecciona lo que busca</option>
+            <option value="">Hambugersa</option>
+            <option value="">Papas fritas</option>
+            <option value="">Hot dog</option>
+          </select>
+          <label class="col-12" id="labelTitulo"> Input de area de texto </label>
+          <textarea class="form-control" id="inputFormBasic"></textarea>
+          <label class="col-12" id="labelTitulo"> Input de rango </label>
+          <input type="range" class="form-range" id="customRange1" style="">
+          <div class="form-check col-12">
+            <input class="form-check-input" type="checkbox" value="" style="padding: 10px; margin-top: 15px;">
+            <label class="form-check-label" for="labelTitulo">
+              Default checkbox
+            </label>
+          </div>
+          <div class="form-check col-12">
+            <input class="form-check-input" type="checkbox" value="" id="" style="padding: 10px; margin-top: 15px;"
+              checked>
+            <label class="form-check-label" for="labelTitulo">
+              Checked checkbox
+            </label>
+          </div>
+          <div class="form-check col-12">
+            <input class="form-check-input" type="checkbox" value="" id="" style="padding: 10px; margin-top: 15px;"
+              disabled>
+            <label class="form-check-label" for="labelTitulo">
+              Default checkbox disabled
+            </label>
+          </div>
+          <div class="form-check col-12">
+            <input class="form-check-input" type="checkbox" value="" id="" style="padding: 10px; margin-top: 15px;"
+              disabled checked>
+            <label class="form-check-label" for="labelTitulo">
+              Checked checkbox disabled
+            </label>
+          </div>
+          <div class="form-check col-12">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="labelTitulo">
+              Default radio
+            </label>
+          </div>
+          <div class="form-check col-12">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Default checked radio
+            </label>
+          </div>
+          <div class="form-check col-12">
+            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" disabled>
+            <label class="form-check-label" for="labelTitulo">
+              Default radio disabled
+            </label>
+          </div>
+          <div class="form-check col-12">
+            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault2" disabled
+              checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Default checked radiodisabled
+            </label>
+          </div>
+          <div class="form-check form-switch col-12">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+          </div>
+          <div class="form-check form-switch col-12">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+          </div>
+          <div class="form-check form-switch col-12">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+            <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+          </div>
+          <div class="form-check form-switch col-12">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked
+              disabled>
+            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox
+              input</label>
+          </div>
+          <label for="exampleColorInput" class="form-label">Color picker</label>
+          <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+            title="Choose your color">
+          <label class="col-12" id="labelTitulo"> Subir archivo </label>
+          <input class="form-control" type="file" id="inputFormBasic">
+          <button type="submit" class="btn buttonconfirmar col-12">
+            <p id="labelTitulo" style="margin: 0; padding:7px; color: #fff;">Guardar</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="card">
+        <div class="card-body " id="cardforms">
+          <h1 class="tituloForms">Formulario formado</h1>
+          <div class="row">
+            <div class="col-4">
+              <label class="4" id="labelTituloFormados"> Nombre de Usuario</label>
+              <input class="8" id="inputFormformado" type="text" placeholder="Alan Borjes">
+            </div>
+            <div class="col-4">
+              <label class="4" id="labelTituloFormados"> Correo electronico </label>
+              <input class="8" id="inputFormformado" type="text" placeholder="AlanBorjes@gmail.com">
+            </div>
+            <div class="col-4">
+              <label class="4" id="labelTituloFormados"> Numero Celular</label>
+              <input class="8" id="inputFormformado" type="number" placeholder="7775896633">
+            </div>
+            <div class="col-4 ">
+              <label class="4" id="labelTituloFormados"> Contraseña</label>
+              <input class="8" id="inputFormformado" type="password" placeholder="***************">
+            </div>
+            <div class="col-4 ">
+              <label class="4" id="labelTituloFormados">Confirmar Contraseña</label>
+              <input class="8" id="inputFormformado" type="password" placeholder="***************">
+            </div>
+          </div>
 
+
+          <div class="col-12 align-self-center">
+            <button type="submit" class="btn buttonconfirmarformado">
+              <p id="labelTituloFormados" style="margin: 0; padding:7px; color: #fff;">Guardar</p>
+            </button>
+            <button type="submit" class="btn buttoncancelar ">
+              <p id="labelTituloFormados" style="margin: 0; padding:7px; color: #000;">Cancelar</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 15px;">
+      <div class="card">
+        <div class="card-body " id="cardforms">
+          <h1 class="tituloForms">Wizzard</h1>
         </div>
       </div>
     </div>
   </div>
-</div>
