@@ -15,6 +15,7 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { RegisterComponent } from './components/register/register.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { LandingComponent } from './components/landing/landing.component';
 
 const routes: Routes = [
   { path: 'dashboard',
@@ -58,6 +59,9 @@ const routes: Routes = [
   },
   { path: 'error500',
     component: Error500Component,
+  },
+  { path: 'home',
+  component: LandingComponent,
   },
   { path: '',
     redirectTo:'/dashboard',
