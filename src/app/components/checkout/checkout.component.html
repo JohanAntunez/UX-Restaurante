@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" id="contenedorprincipal">
     <div class="row">
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"
             id="bootstrap-css">
@@ -46,44 +46,47 @@
                             <div class="col-md-12">
                                 <div class="contenidor1">
                                     <div class="row">
-                                        <div class="col-7">
-                                            <div class="card col-12" id="cardpedidos">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <img src="../../../assets/img/Hambugersa.jfif" id="imagendetalle"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p id="titulodetallepedido">Nombre de alimento</p> <br>
-                                                        <div class="row">
-                                                            <p class="col-6" id="comentarios">Cantidad: + 01 -</p>
-                                                            <p class="col-6" id="comentarios">Precio: $100</p>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <div class="card col-12" id="cardpedidos">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="../../../assets/img/Hambugersa.jfif" id="imagendetalle"
+                                                                alt="">
                                                         </div>
-                                                        <p id="titulodetallepedidoEspecificaciones">Especificaciones</p>
-                                                        <textarea class="form-control" id="inputFormBasic"></textarea>
+                                                        <div class="col-6">
+                                                            <p id="titulodetallepedido">Burger Supreme</p> <br>
+                                                            <div class="row">
+                                                                <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="comentarios">Cantidad: + 01 -</p>
+                                                                <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="comentarios">Precio: $100</p>
+                                                            </div>
+                                                            <p id="titulodetallepedidoEspecificaciones"  class="col-12">Especificaciones</p>
+                                                            <textarea class="form-control" id="inputFormBasic"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card col-12" id="cardpedidos">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="../../../assets/img/Nuggets.jfif" id="imagendetalle"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p id="titulodetallepedido">Orden de Nuggets</p> <br>
+                                                            <div class="row">
+                                                                <p class="col-lg-8 col-md-8 col-sm-12 col-xs-12" id="comentarios">Cantidad: + 02 -</p>
+                                                                <p class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="comentarios">Precio: $100</p>
+                                                            </div>
+                                                            <p id="titulodetallepedidoEspecificaciones" class="col-12">Especificaciones</p>
+                                                            <textarea class="form-control" id="inputFormBasic"></textarea>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card col-12" id="cardpedidos">
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <img src="../../../assets/img/Nuggets.jfif" id="imagendetalle"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <p id="titulodetallepedido">Nombre de alimento</p> <br>
-                                                        <div class="row">
-                                                            <p class="col-6" id="comentarios">Cantidad: + 01 -</p>
-                                                            <p class="col-6" id="comentarios">Precio: $100</p>
-                                                        </div>
-                                                        <p id="titulodetallepedidoEspecificaciones">Especificaciones</p>
-                                                        <textarea class="form-control" id="inputFormBasic"></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            
 
                                         </div>
-                                        <div class="col-5">
+                                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" style="margin-left: 40px;" >
                                             <div class="row">
                                                 <h1 id="tituloPedido" class="col-12">Mi pedido</h1>
                                                 <p class="col-6" id="texto">SubTotal:</p>
@@ -112,7 +115,7 @@
                         <div class="col-12">
                             <div class="row">
                                 <h1 id="TituloPagoForma">Forma de Pago</h1>
-                                <div class="col-7" id="cardTarjeta">
+                                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" id="cardTarjeta">
                                     <div class="row">
                                         <h1 class="col-6" id="totalPago">Total</h1>
                                         <h1 class="col-6 align-self-end" id="totalPago2">$165.30 MX</h1>
@@ -123,12 +126,12 @@
                                         <input class="col-4" type="text" id="inputpagototal" placeholder="CVV">
                                         <img src="../../../assets/img/TarjetasPagos.png" alt="" 
                                             class="col-7" style="margin-bottom: 55px; margin-top: 25px;">
-                                        <input class="col-4" type="text" id="inputpagototal" placeholder="CVV"
+                                        <input class="col-4" type="text" id="inputpagototal" placeholder="mm/yy"
                                             style="margin-bottom: 55px;">
 
                                     </div>
                                 </div>
-                                <div class="col-5" id="FormaPagoInfo">
+                                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" id="FormaPagoInfo">
                                     <div class="form-check col-12">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault"
                                             id="flexRadioDefault1">
@@ -176,10 +179,10 @@
                             <div class="row">
                                 <h1 id="TituloPagoForma">! Ya casi esta tu compra ¡</h1>
 
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                     <img src="../../../assets/img/paqueteListo.png" id="imagenPaqueteListo" alt="">
                                 </div>
-                                <div class="col-5">
+                                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                                     <h1 id="tituloPedido" class="col-12">Dirección</h1>
                                     <div class="form-check2 col-12">
                                         <input class="form-check-input2" type="radio" name="flexRadioDefault"

@@ -1,3 +1,8 @@
+#contenedorprincipal {
+    margin-top: 3%;
+
+}
+
 .stepwizard-step p {
     margin-top: 10px;
 }
@@ -39,66 +44,76 @@
 
 .btn-circle {
     background-color: #E6AC00;
-  width: 70px;
-  height: 70px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border-radius: 100px;
-  border-color: #E6AC00;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 100px;
+    border-color: #E6AC00;
 }
-#iconos{
+
+#iconos {
     width: 70px;
     height: 70px;
     font-size: 48px;
 }
-#tituloPedido{
+
+#tituloPedido {
     text-align: center;
     font-family: 'Montserrat';
     font-style: normal;
 
 }
-#titulodetallepedido{
+
+#titulodetallepedido {
     margin: 15px 0px 0px 0px;
     font-family: 'Montserrat';
     font-style: normal;
     font-size: 24px;
 }
-#imagendetalle{
+
+#imagendetalle {
     width: 100%;
     height: 90%;
     margin: 15px;
 }
-#cardpedidos{
-box-sizing: border-box;
-background: #FFFFFF;
-border: 0.4px solid #000000;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 27px;
-margin: 0px 0px 20px 0px;
-padding-bottom: 15px;
+
+#cardpedidos {
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    min-width: 225;
+    min-height: 205px;
+    box-shadow: 1px 2px 3px #999;
+    margin: 0px 0px 20px 0px;
+    padding-bottom: 15px;
 }
-#comentarios{
+
+#comentarios {
     font-family: 'Montserrat';
     font-style: normal;
     font-size: 18px;
 }
-#titulodetallepedidoEspecificaciones{
+
+#titulodetallepedidoEspecificaciones {
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
 
 }
-#inputFormBasic{
+
+#inputFormBasic {
     width: 100%;
     height: 50px;
     font-family: 'Montserrat';
     font-style: normal;
 }
+
 #buttonconfirmar {
     margin: 10px 10px 10px 0px;
     width: 150px;
@@ -107,7 +122,8 @@ color: #000000;
     border: 0px;
     align-items: center;
 }
-#texto{
+
+#texto {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -116,67 +132,78 @@ color: #000000;
     margin: 10px 0px 10px 0px;
     color: #000000;
 }
-#TituloPagoForma{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 39px;
-text-align: center;
 
-color: #000000;
+#TituloPagoForma {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+
+    color: #000000;
 }
-.contenidor1{
+
+.contenidor1 {
     padding: 40px 5px 15px 5px
 }
-#cardTarjeta{
+
+#cardTarjeta {
     margin-top: 50px;
     box-sizing: border-box;
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 20px;
 }
-#totalPago{
+
+#totalPago {
     margin-top: 35px;
     font-family: 'Montserrat';
-font-style: normal;
-font-size: 22px;
-color: #000000;
+    font-style: normal;
+    font-size: 22px;
+    color: #000000;
 }
-#totalPago2{
+
+#totalPago2 {
     font-family: 'Montserrat';
     font-size: 22px;
 
-font-style: normal;
-text-align: right;
-color: #000000;
+    font-style: normal;
+    text-align: right;
+    color: #000000;
 }
-#inputpagototal{
+
+#inputpagototal {
     margin: 25px 10px 10px 10px;
     padding: 7px 0px 7px;
     background: #FFFFFF;
-border: 1px solid rgba(0, 0, 0, 0.5);
-border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
-#FormaPagoInfo{
+
+#FormaPagoInfo {
     margin-top: 50px;
 }
-.form-check{
+
+.form-check {
     box-sizing: border-box;
-padding: 10px 0px;
-background: #F2F2F2;
-border: 1px solid rgba(0, 0, 0, 0.7);
-border-radius: 12px;
+    padding: 10px 0px;
+    background: #F2F2F2;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
 }
-.form-check-input{
+
+.form-check-input {
     margin-left: 20px;
 }
-.form-check-label{
+
+.form-check-label {
     margin-left: 25px;
     font-family: 'Montserrat';
-font-style: normal;
+    font-style: normal;
 }
-#AnadirMas{
+
+#AnadirMas {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -186,26 +213,30 @@ font-style: normal;
     text-align: center;
 
 }
-#imagenPaqueteListo{
+
+#imagenPaqueteListo {
     width: 100%;
     height: 100%;
 }
-.form-check-input2{
+
+.form-check-input2 {
     margin-left: 20px;
     padding: 5px;
 }
-.form-check-label2{
+
+.form-check-label2 {
     margin: 5px 25px 5px 15px;
     font-family: 'Montserrat';
-font-style: normal;
-font-size: 22px;
+    font-style: normal;
+    font-size: 22px;
 
 }
-.form-check2{
+
+.form-check2 {
     box-sizing: border-box;
     margin: 15px;
-padding: 10px 0px;
-background: #F2F2F2;
-border: 1px solid rgba(0, 0, 0, 0.7);
-border-radius: 12px;
+    padding: 10px 0px;
+    background: #F2F2F2;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
 }
