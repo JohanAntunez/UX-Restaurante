@@ -10,6 +10,8 @@ import {checkoutComponent} from './components/checkout/checkout.component'
 import {CdkStepperModule} from '@angular/cdk/stepper';
 import {ReactiveFormsModule } from '@angular/forms';
 import {MatProgressBarModule} from '@angular/material/progress-bar'
+import {MatIconModule} from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar'
     MenubarModule,
     CdkStepperModule,
     ReactiveFormsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

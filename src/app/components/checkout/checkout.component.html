@@ -1,69 +1,214 @@
 <div class="container-fluid">
     <div class="row">
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"
+            id="bootstrap-css">
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <!------ Include the above in your HEAD tag ---------->
-        
+
         <div class="container">
-        <div class="stepwizard">
-            <div class="stepwizard-row setup-panel">
-                <div class="stepwizard-step">
-                    <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-                    <p>Step 1</p>
-                </div>
-                <div class="stepwizard-step">
-                    <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                    <p>Step 2</p>
-                </div>
-                <div class="stepwizard-step">
-                    <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                    <p>Step 3</p>
+            <!-- init wizard options -->
+            <div class="stepwizard">
+                <div class="stepwizard-row setup-panel">
+                    <div class="stepwizard-step">
+                        <div *ngIf="viewActive == viewOne" (click)="changeActiveView(viewOne)" type="button"
+                            class="btn btn-primary btn-circle"><mat-icon id="iconos">shopping_basket</mat-icon>
+                        </div>
+                        <div *ngIf="viewActive != viewOne" (click)="changeActiveView(viewOne)" type="button"
+                            class="btn btn-default btn-circle"><mat-icon id="iconos">shopping_basket</mat-icon>
+                        </div>
+                        <p>Step 1</p>
+                    </div>
+                    <div class="stepwizard-step">
+                        <div *ngIf="viewActive == viewTwo" (click)="changeActiveView(viewTwo)" type="button"
+                            class="btn btn-primary btn-circle"><mat-icon id="iconos">shopping_cart</mat-icon></div>
+                        <div *ngIf="viewActive != viewTwo" (click)="changeActiveView(viewTwo)" type="button"
+                            class="btn btn-default btn-circle"><mat-icon id="iconos">shopping_cart</mat-icon></div>
+                        <p>Step 2</p>
+                    </div>
+                    <div class="stepwizard-step">
+                        <div *ngIf="viewActive == viewThree" (click)="changeActiveView(viewThree)" type="button"
+                            class="btn btn-primary btn-circle"><mat-icon id="iconos">check</mat-icon></div>
+                        <div *ngIf="viewActive != viewThree" (click)="changeActiveView(viewThree)" type="button"
+                            class="btn btn-default btn-circle"><mat-icon id="iconos">check</mat-icon></div>
+                        <p>Step 3</p>
+                    </div>
                 </div>
             </div>
+
+            <!-- end wizard options -->
+
+            <form role="form">
+
+                <div *ngIf="viewActive == viewOne">
+                    <div class="row setup-content" id="step-1">
+                        <div class="col-xs-12">
+                            <div class="col-md-12">
+                                <div class="contenidor1">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="card col-12" id="cardpedidos">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="../../../assets/img/Hambugersa.jfif" id="imagendetalle"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p id="titulodetallepedido">Nombre de alimento</p> <br>
+                                                        <div class="row">
+                                                            <p class="col-6" id="comentarios">Cantidad: + 01 -</p>
+                                                            <p class="col-6" id="comentarios">Precio: $100</p>
+                                                        </div>
+                                                        <p id="titulodetallepedidoEspecificaciones">Especificaciones</p>
+                                                        <textarea class="form-control" id="inputFormBasic"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card col-12" id="cardpedidos">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="../../../assets/img/Nuggets.jfif" id="imagendetalle"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p id="titulodetallepedido">Nombre de alimento</p> <br>
+                                                        <div class="row">
+                                                            <p class="col-6" id="comentarios">Cantidad: + 01 -</p>
+                                                            <p class="col-6" id="comentarios">Precio: $100</p>
+                                                        </div>
+                                                        <p id="titulodetallepedidoEspecificaciones">Especificaciones</p>
+                                                        <textarea class="form-control" id="inputFormBasic"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="row">
+                                                <h1 id="tituloPedido" class="col-12">Mi pedido</h1>
+                                                <p class="col-6" id="texto">SubTotal:</p>
+                                                <p class="col-6" id="texto">$300</p>
+                                                <p class="col-6" id="texto">IVA:</p>
+                                                <p class="col-6" id="texto">$30</p>
+                                                <p class="col-6" id="texto">Propina:</p>
+                                                <input type="number" class="col-6">
+                                                <p class="col-6" id="texto">Total:</p>
+                                                <p class="col-6" id="texto">$330</p>
+                                                <button (click)="changeActiveView(viewTwo)"
+                                                    class="btn btn-primary nextBtn btn-lg pull-right col-12"
+                                                    id="buttonconfirmar" type="button">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf="viewActive === viewTwo">
+                    <div class="row setup-content" id="step-2">
+                        <div class="col-12">
+                            <div class="row">
+                                <h1 id="TituloPagoForma">Forma de Pago</h1>
+                                <div class="col-7" id="cardTarjeta">
+                                    <div class="row">
+                                        <h1 class="col-6" id="totalPago">Total</h1>
+                                        <h1 class="col-6 align-self-end" id="totalPago2">$165.30 MX</h1>
+                                        <input class="col-5" type="text" id="inputpagototal" placeholder="Nombres(s)">
+                                        <input class="col-6" type="text" id="inputpagototal" placeholder="Apelldios(s)">
+                                        <input class="col-7" type="text" id="inputpagototal"
+                                            placeholder="Card number NO SPANGLISH">
+                                        <input class="col-4" type="text" id="inputpagototal" placeholder="CVV">
+                                        <img src="../../../assets/img/TarjetasPagos.png" alt="" 
+                                            class="col-7" style="margin-bottom: 55px; margin-top: 25px;">
+                                        <input class="col-4" type="text" id="inputpagototal" placeholder="CVV"
+                                            style="margin-bottom: 55px;">
+
+                                    </div>
+                                </div>
+                                <div class="col-5" id="FormaPagoInfo">
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            BBVA
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****
+                                            - **** - **** - 9015
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            VISA
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;******
+                                            - **** - **** - 7865
+                                        </label>
+                                    </div>
+                                    <h1 class="col-12" id="AnadirMas">Añadir otra forma de pago &nbsp;&nbsp;&nbsp;+</h1>
+                                    <div class="row">
+                                        <p class="col align-self-start"><mat-icon
+                                                style="padding-top: 5px ;">credit_card</mat-icon>&nbsp;&nbsp;&nbsp;&nbsp;VISA
+                                        </p>
+                                        <p class="col-2 align-self-end">+</p>
+                                        <hr>
+                                        <p class="col align-self-start"><mat-icon
+                                                style="padding-top: 4px ;">credit_card</mat-icon>&nbsp;&nbsp;&nbsp;&nbsp;Tarjeta
+                                        </p>
+                                        <p class="col-2 align-self-end">+</p>
+                                        <hr>
+                                    </div>
+                                    <button (click)="changeActiveView(viewThree)"
+                                        class="btn btn-primary nextBtn btn-lg pull-right col-12" id="buttonconfirmar"
+                                        type="button">Continuar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf="viewActive === viewThree">
+                    <div class="row setup-content" id="step-3">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <h1 id="TituloPagoForma">! Ya casi esta tu compra ¡</h1>
+
+                                <div class="col-6">
+                                    <img src="../../../assets/img/paqueteListo.png" id="imagenPaqueteListo" alt="">
+                                </div>
+                                <div class="col-5">
+                                    <h1 id="tituloPedido" class="col-12">Dirección</h1>
+                                    <div class="form-check2 col-12">
+                                        <input class="form-check-input2" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label2" for="flexRadioDefault1">
+                                            Dirección 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check2 col-12">
+                                        <input class="form-check-input2" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label2" for="flexRadioDefault2">
+                                            Dirección 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check2 col-12">
+                                        <input class="form-check-input2" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label2" for="flexRadioDefault1">
+                                            Dirección 3
+                                        </label>
+                                    </div>
+                                    <button class="btn btn-success btn-lg pull-right" id="buttonconfirmar" type="submit">Finish!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-        <form role="form">
-            <div class="row setup-content" id="step-1">
-                <div class="col-xs-12">
-                    <div class="col-md-12">
-                        <h3> Step 1</h3>
-                        <div class="form-group">
-                            <label class="control-label">First Name</label>
-                            <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name"  />
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Last Name</label>
-                            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name" />
-                        </div>
-                        <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-                    </div>
-                </div>
-            </div>
-            <div class="row setup-content" id="step-2">
-                <div class="col-xs-12">
-                    <div class="col-md-12">
-                        <h3> Step 2</h3>
-                        <div class="form-group">
-                            <label class="control-label">Company Name</label>
-                            <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Company Address</label>
-                            <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address"  />
-                        </div>
-                        <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-                    </div>
-                </div>
-            </div>
-            <div class="row setup-content" id="step-3">
-                <div class="col-xs-12">
-                    <div class="col-md-12">
-                        <h3> Step 3</h3>
-                        <button class="btn btn-success btn-lg pull-right" type="submit">Finish!</button>
-                    </div>
-                </div>
-            </div>
-        </form>
-        </div>                                                                    
     </div>
-  </div>
+</div>
