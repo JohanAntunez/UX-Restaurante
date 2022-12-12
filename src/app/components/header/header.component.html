@@ -61,20 +61,6 @@ style="background-color: white; box-shadow: 2px 0px 5px 2px rgba(0,0,0,0.3) !imp
           </a>
         </li>
 
-        
-
-
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="material-icons">notifications</i>          
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="material-icons">person</i>          
@@ -87,6 +73,62 @@ style="background-color: white; box-shadow: 2px 0px 5px 2px rgba(0,0,0,0.3) !imp
             <li><a class="dropdown-item" href="#">Email</a></li>
           </ul>
         </li>
+
+        
+        <li class="nav-item dropdown" >
+          
+          <a type="button" class="nav-link" data-bs-toggle="dropdown"
+          aria-expanded="false" style="color: #1AC858;" >
+            <i class="material-icons" style="position: relative;">notifications
+              <span class="intermitente position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+              </span>
+            </i>
+            
+          </a>
+          <ul class="dropdown-menu justify-content-center notificaciones">
+            <li><a class="dropdown-item" href="#">
+                <span class="demo-text" style="font-weight: 900; font-size: 15px;">6 Notificaciones nuevas </span>
+            </a>
+            </li>
+
+            <li><a class="dropdown-item" href="#">
+              <i class="material-icons" style="display:inline-block;vertical-align:top; color: #1AC858;">check_circle</i>
+              <span class="demo-text"> Orden recibida</span>              
+              <span class="time"> (Hace 30 min)</span>
+            </a>
+            </li>
+            <li><a class="dropdown-item" href="#">
+              <i class="material-icons" style="display:inline-block;vertical-align:top; color: red;">error</i>
+              <span class="demo-text"> Pedido cancelado</span>              
+              <span class="time"> (Hace 4 hrs)</span>
+            </a>
+            </li>
+            <li><a class="dropdown-item" href="#">
+              <i class="material-icons" style="display:inline-block;vertical-align:top; color: #56AFF0;">add_circle</i>
+              <span class="demo-text"> Nuevo cliente registrado</span>              
+              <span class="time"> (Ayer)</span>
+            </a>
+            </li>
+            <li><a class="dropdown-item" href="#">
+              <i class="material-icons" style="display:inline-block;vertical-align:top; color: black;">new_releases</i>
+              <span class="demo-text"> Nueva promoción disponible</span>              
+              <span class="time"> (3 dic. alas 1.46 p.m.)</span>
+            </a>
+            </li>
+            <li><a class="dropdown-item" href="#">
+              <i class="material-icons" style="display:inline-block;vertical-align:top; color: orange;">local_shipping</i>
+              <span class="demo-text"> Entrega exitosa</span>              
+              <span class="time"> (1 dic. alas 3.17 p.m.)</span>
+            </a>
+            </li>
+            <li><a class="dropdown-item" href="#">
+              <div class="px-3 py-2 d-flex align-items-center justify-content-center border-top">
+                <span class="time" style="font-weight: 700;"> Ver todo </span>
+              </div>
+            </a>
+            </li>
+            </ul>
+          </li>
       </ul>
       
         <button class="btn-login" type="button">Login</button>
