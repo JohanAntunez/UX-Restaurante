@@ -15,15 +15,9 @@ import { InboxEmailComponent } from './components/inbox-email/inbox-email.compon
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { LoginComponent } from './components/login/login.component';
-<<<<<<< HEAD
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-=======
-<<<<<<< HEAD
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
-=======
 import { ChatComponent } from './components/chat/chat.component';
->>>>>>> a4e254ba6625afb739df66b0df7c63b5f9a477db
->>>>>>> 2db1661f5907953d14f94a3df73714edc71d62a4
 
 
 @NgModule({
@@ -39,15 +33,9 @@ import { ChatComponent } from './components/chat/chat.component';
     SidebarComponent,
     PricingComponent,
     LoginComponent,
-<<<<<<< HEAD
     DashboardComponent,
-=======
-<<<<<<< HEAD
     UserProfileComponent,
-=======
     ChatComponent,
->>>>>>> a4e254ba6625afb739df66b0df7c63b5f9a477db
->>>>>>> 2db1661f5907953d14f94a3df73714edc71d62a4
   ],
   imports: [
     BrowserModule,
