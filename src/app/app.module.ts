@@ -25,6 +25,7 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
 import { ChatComponent } from './components/chat/chat.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { ListBebidasComponent } from './components/list-bebidas/list-bebidas.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { LandingComponent } from './components/landing/landing.component';
     UserProfileComponent,
     ChatComponent,
     RegisterComponent,
-    LandingComponent
+    LandingComponent,
+    ListBebidasComponent
   ],
   imports: [
     BrowserModule,

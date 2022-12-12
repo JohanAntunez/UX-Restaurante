@@ -16,6 +16,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { RegisterComponent } from './components/register/register.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { ListBebidasComponent } from './components/list-bebidas/list-bebidas.component';
 
 const routes: Routes = [
   { path: 'dashboard',
@@ -23,6 +24,9 @@ const routes: Routes = [
   },
   { path: 'list',
     component: ProductListComponent,
+  },
+  { path: 'bebidas',
+    component: ListBebidasComponent,
   },
   { path: 'login',
     component: LoginComponent,
