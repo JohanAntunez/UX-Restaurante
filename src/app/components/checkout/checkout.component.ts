@@ -17,8 +17,18 @@ export class checkoutComponent {
 
   public viewThree = EViewNames.StepThree;
 
+   subtotal:number = 300;
+   total:number = 0;
+   propina:number =0;
+
+
   changeActiveView(viewName: string): void {
     this.viewActive = viewName;
+  }
+
+  sumar(){
+    this.total = this.subtotal+this.propina;
+
   }
 
 }

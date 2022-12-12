@@ -227,16 +227,16 @@
                                     </div>
                                 </div>
                                 <div class="col-12 d-grid gap-2 d-sm-flex justify-content-end">
-                                    <button type="submit" class="btn buttonconfirmar">
+                                    <button type="submit" class="btn buttonconfirmar" (click)="redirect('checkout')" data-bs-dismiss="modal">
                                         <div class="d-flex align-items-center"style="margin: 0; color: #fff;">
                                             <mat-icon style="overflow: visible;">payment</mat-icon>
                                             Comprar ya
                                         </div>
                                     </button>
-                                    <button type="submit" class="btn buttonconfirmar">
+                                    <button type="submit" class="btn buttonconfirmar" (click)="addCarrito()" data-bs-dismiss="modal">
                                         <div class="d-flex align-items-center"style="margin: 0; color: #fff;">
                                             <mat-icon style="overflow: visible;">shopping_cart</mat-icon>
-                                                Añadir
+                                            Añadir
                                         </div>
                                     </button>
                                 </div>

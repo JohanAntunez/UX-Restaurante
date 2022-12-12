@@ -1,10 +1,5 @@
 <div class="container-fluid" id="contenedorprincipal">
     <div class="row">
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"
-            id="bootstrap-css">
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-        <!------ Include the above in your HEAD tag ---------->
 
         <div class="container">
             <!-- init wizard options -->
@@ -17,21 +12,21 @@
                         <div *ngIf="viewActive != viewOne" (click)="changeActiveView(viewOne)" type="button"
                             class="btn btn-default btn-circle"><mat-icon id="iconos">shopping_basket</mat-icon>
                         </div>
-                        <p>Step 1</p>
+                        <p>Pedido</p>
                     </div>
                     <div class="stepwizard-step">
                         <div *ngIf="viewActive == viewTwo" (click)="changeActiveView(viewTwo)" type="button"
                             class="btn btn-primary btn-circle"><mat-icon id="iconos">shopping_cart</mat-icon></div>
                         <div *ngIf="viewActive != viewTwo" (click)="changeActiveView(viewTwo)" type="button"
                             class="btn btn-default btn-circle"><mat-icon id="iconos">shopping_cart</mat-icon></div>
-                        <p>Step 2</p>
+                        <p>Pago</p>
                     </div>
                     <div class="stepwizard-step">
                         <div *ngIf="viewActive == viewThree" (click)="changeActiveView(viewThree)" type="button"
                             class="btn btn-primary btn-circle"><mat-icon id="iconos">check</mat-icon></div>
                         <div *ngIf="viewActive != viewThree" (click)="changeActiveView(viewThree)" type="button"
                             class="btn btn-default btn-circle"><mat-icon id="iconos">check</mat-icon></div>
-                        <p>Step 3</p>
+                        <p>Entrega</p>
                     </div>
                 </div>
             </div>
@@ -54,7 +49,7 @@
                                                             <img src="../../../assets/img/Hambugersa.jfif" id="imagendetalle"
                                                                 alt="">
                                                         </div>
-                                                        <div class="col-6">
+                                                        <div class="col-6" id="pedido">
                                                             <p id="titulodetallepedido">Burger Supreme</p> <br>
                                                             <div class="row">
                                                                 <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="comentarios">Cantidad: + 01 -</p>
@@ -71,7 +66,7 @@
                                                             <img src="../../../assets/img/Nuggets.jfif" id="imagendetalle"
                                                                 alt="">
                                                         </div>
-                                                        <div class="col-6">
+                                                        <div class="col-6" id="pedido">
                                                             <p id="titulodetallepedido">Orden de Nuggets</p> <br>
                                                             <div class="row">
                                                                 <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12"  id="comentarios">Cantidad: + 02 -</p>
@@ -83,10 +78,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
 
                                         </div>
-                                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" style="margin-left: 40px;" >
+                                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12"  style="margin-left: 40px;" >
                                             <div class="row">
                                                 <h1 id="tituloPedido" class="col-12">Mi pedido</h1>
                                                 <p class="col-6" id="texto">SubTotal:</p>
@@ -99,7 +94,7 @@
                                                 <p class="col-6" id="texto">$330</p>
                                                 <button (click)="changeActiveView(viewTwo)"
                                                     class="btn btn-primary nextBtn btn-lg pull-right col-12"
-                                                    id="buttonconfirmar" type="button">Next</button>
+                                                    id="buttonconfirmar" type="button">Siguiente</button>
                                             </div>
                                         </div>
                                     </div>
@@ -124,7 +119,7 @@
                                         <input class="col-7" type="text" id="inputpagototal"
                                             placeholder="Card number NO SPANGLISH">
                                         <input class="col-4" type="text" id="inputpagototal" placeholder="CVV">
-                                        <img src="../../../assets/img/TarjetasPagos.png" alt="" 
+                                        <img src="../../../assets/img/TarjetasPagos.png" alt=""
                                             class="col-7" style="margin-bottom: 55px; margin-top: 25px;">
                                         <input class="col-4" type="text" id="inputpagototal" placeholder="mm/yy"
                                             style="margin-bottom: 55px;">
@@ -205,7 +200,7 @@
                                             Dirección 3
                                         </label>
                                     </div>
-                                    <button class="btn btn-success btn-lg pull-right" id="buttonconfirmar" type="submit">Finish!</button>
+                                    <button class="btn btn-success btn-lg pull-right" id="buttonconfirmar" type="submit">Finalizar</button>
                                 </div>
                             </div>
                         </div>

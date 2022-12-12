@@ -1,5 +1,6 @@
 #contenedorprincipal {
-    margin-top: 3%;
+    margin-top: 50px;
+
 
 }
 
@@ -75,10 +76,92 @@
 }
 
 #imagendetalle {
-    width: 100%;
-    height: 90%;
+    width: 130px;
+    height: 130px;
     margin: 15px;
 }
+
+
+@media screen and (max-width:1024px) {
+    #imagendetalle {
+        width: 130px;
+        height: 130px;
+        margin: 15px;
+    }
+    #comentarios {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 16px;
+    }
+    #pedido{
+        margin-left: 36px;
+    }
+    #titulodetallepedidoEspecificaciones {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 12px;
+        color: #000000;
+
+    }
+}
+
+@media screen and (max-width:768px){
+    #imagendetalle {
+        width: 120px;
+        height: 120px;
+        margin: 15px;
+    }
+    #comentarios {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 14px;
+    }
+
+    #titulodetallepedidoEspecificaciones {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000000;
+
+    }
+}
+
+@media screen and (max-width:512px){
+    #imagendetalle {
+        width: 120px;
+        height: 120px;
+        margin: 15px;
+    }
+    #comentarios {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 10px;
+    }
+
+    #titulodetallepedidoEspecificaciones {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 10px;
+        color: #000000;
+
+    }
+
+    #titulodetallepedido {
+        margin: 15px 0px 0px 0px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 15px;
+
+    }
+
+}
+
+
+
+
 
 #cardpedidos {
     background: #fff;
@@ -94,14 +177,14 @@
 #comentarios {
     font-family: 'Montserrat';
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #titulodetallepedidoEspecificaciones {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     color: #000000;
 

@@ -72,7 +72,7 @@ const routes: Routes = [
   component: LandingComponent,
   },
   { path: '',
-    redirectTo:'/dashboard',
+    redirectTo:'/home',
     pathMatch:'full'
   },
 ];
