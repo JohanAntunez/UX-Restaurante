@@ -40,9 +40,7 @@
     background-size: cover;
 }
 
-
-
-@media screen and (min-width: 300px) and (max-width:599px){
+@media screen and (min-width:0px) and (max-width:299px){
 
     #tasteFor{
         position: absolute;
@@ -103,6 +101,70 @@
     }
 }
 
+@media screen and (min-width: 300px) and (max-width:599px){
+
+    #tasteFor{
+        position: absolute;
+        width: 320px;
+        height: 270px;
+        left: 0;
+        right: 0;
+        top: 20px;
+        animation: float22 5s ease-in-out infinite;
+        z-index: 10;
+    }
+    #responsiveLand2{
+        display: none;
+    }
+    #burger{
+        position: absolute;
+        top:200px;
+        right: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        z-index: 10;
+        animation: float 6s ease-in-out infinite;
+    }
+    #responsiveLand{
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 50px;
+        top: 120px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 25px;
+        line-height: 30px;
+        display: inline;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    #onlyAt{
+        display: none;
+    }
+    #spFood{
+        display: none;
+    }
+    #side1{
+        position: absolute;
+        width: 30px;
+        height: 1800px;
+        left: 0px;
+        top: -102px;
+    }
+    #side2{
+        position: absolute;
+        width: 30px;
+        height: 1800px;
+        right: 0;
+        top: -102px;
+    }
+}
+
 @media screen and (min-width: 600px) and (max-width:767.9px){
 
     #tasteFor{
@@ -127,8 +189,8 @@
     }
     #responsiveLand{
         position: absolute;
-        width: 507px;
-        height: 231px;
+        width: auto;
+        height: auto;
         left: -80px;
         top: 120px;
 
