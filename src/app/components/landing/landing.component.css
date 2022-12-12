@@ -1,0 +1,482 @@
+@keyframes float {
+    0% {
+        transform: translatey(0px) rotate(0deg);
+    }
+
+    20% {
+        transform: translatey(0px) rotate(20deg);
+    }
+
+    50% {
+        transform: translatey(-20px) rotate(20deg);
+    }
+    80% {
+        transform: translatey(20px) rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+@keyframes float22 {
+    0% {
+        transform: translatey(0px) rotate(0deg);
+    }
+    50% {
+        transform: translatey(-20px) rotate(20deg);
+    }
+    80% {
+        transform: translatey(10px) rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+.backgroundErrorUserBurger{
+    background: url("^assets/img/bgBurger.png") no-repeat bottom ;
+    background-size: cover;
+}
+
+
+
+@media screen and (min-width: 300px) and (max-width:599px){
+
+    #tasteFor{
+        position: absolute;
+        width: 435px;
+        height: 400px;
+        left: -25px;
+        top: 20px;
+        animation: float22 5s ease-in-out infinite;
+    }
+    #responsiveLand2{
+        display: none;
+    }
+    #burger{
+        position: absolute;
+        top:200px;
+        right: -10px;
+        width: 300px;
+        height: 300px;
+        z-index: 10;
+        animation: float 6s ease-in-out infinite;
+    }
+    #responsiveLand{
+        position: absolute;
+        width: 507px;
+        height: 231px;
+        left: -80px;
+        top: 120px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 45px;
+        line-height: 30px;
+        display: inline;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    #onlyAt{
+        display: none;
+    }
+    #spFood{
+        display: none;
+    }
+    #side1{
+        position: absolute;
+        width: 30px;
+        height: 1800px;
+        left: 0px;
+        top: -102px;
+    }
+    #side2{
+        position: absolute;
+        width: 30px;
+        height: 1800px;
+        right: 0;
+        top: -102px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:767.9px){
+
+    #tasteFor{
+        position: absolute;
+        width: 535px;
+        height: 465px;
+        left: -40px;
+        animation: float22 10s ease-in-out infinite;
+
+    }
+    #responsiveLand2{
+        display: none;
+    }
+    #burger{
+        position: absolute;
+        top:200px;
+        right: -10px;
+        width: 300px;
+        height: 300px;
+        z-index: 10;
+        animation: float 6s ease-in-out infinite;
+    }
+    #responsiveLand{
+        position: absolute;
+        width: 507px;
+        height: 231px;
+        left: -80px;
+        top: 120px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 45px;
+        line-height: 30px;
+        display: inline;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    #onlyAt{
+        display: none;
+    }
+    #spFood{
+        display: none;
+    }
+    #side1{
+        position: absolute;
+        width: 30px;
+        height: 1800px;
+        left: 0px;
+        top: -102px;
+    }
+    #side2{
+        position: absolute;
+        width: 30px;
+        height: 1800px;
+        right: 0;
+        top: -102px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:999.9px){
+    #tasteFor{
+        position: absolute;
+        width: 435px;
+        height: 400px;
+        left: 300px;
+        top: 101px;
+        animation: float22 10s ease-in-out infinite;
+    }
+    #responsiveLand2{
+        position: absolute;
+        width: 507px;
+        height: 231px;
+        left: -110px;
+        top: 190px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 40px;
+        line-height: 30px;
+        display: inline;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    #burger{
+        position: absolute;
+        top:80px;
+        right: -400px;
+        width: 450px;
+        height: 500px;
+        z-index: 10;
+        animation: float 6s ease-in-out infinite;
+    }
+    #responsiveLand{
+        position: absolute;
+        width: 507px;
+        height: 231px;
+        left: -110px;
+        top: 190px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 40px;
+        line-height: 30px;
+        display: inline;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    #onlyAt{
+        position: absolute;
+        width: 110.54px;
+        height: 31.48px;
+        left: -20px;
+        top: 280px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 15px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #000000;
+    }
+    #spFood{
+        position: absolute;
+        width: 378px;
+        height: 117px;
+        left: -20px;
+        top: 260px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #20BE58;
+    }
+    #side1{
+        position: absolute;
+        width: 65px;
+        height: 1800px;
+        left: 0px;
+        top: -102px;
+    }
+    #side2{
+        position: absolute;
+        width: 65px;
+        height: 1800px;
+        right: 0;
+        top: -102px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1399px) {
+    #tasteFor{
+        position: absolute;
+        width: 550px;
+        height: 500px;
+        right: -550px;
+        top: 101px;
+        animation: float22 10s ease-in-out infinite;
+    }
+    #responsiveLand2{
+        position: absolute;
+        width: 507px;
+        height: 231px;
+        left: -30px;
+        top: 190px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 67px;
+        line-height: 67px;
+        display: inline;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    #burger{
+        position: absolute;
+        top:20px;
+        right: -600px;
+        width: 600px;
+        height: 600px;
+        z-index: 10;
+        animation: float 6s ease-in-out infinite;
+    }
+    #responsiveLand{
+        position: absolute;
+        width: 507px;
+        height: 231px;
+        left: -30px;
+        top: 190px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 67px;
+        line-height: 67px;
+        display: inline;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    #onlyAt{
+        position: absolute;
+        width: 110.54px;
+        height: 31.48px;
+        left: -25px;
+        top: 420px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 15px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #000000;
+    }
+    #spFood{
+        position: absolute;
+        width: 378px;
+        height: 117px;
+        left: -25px;
+        top: 400px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #20BE58;
+    }
+    #side1{
+        position: absolute;
+        width: 100px;
+        height:1800px;
+        left: 0px;
+        top: -102px;
+    }
+    #side2{
+        position: absolute;
+        width: 100px;
+        height: 1800px;
+        right: 0;
+        top: -102px;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    #tasteFor{
+        position: absolute;
+        width: 735px;
+        height: 665px;
+        left: 500px;
+        top: 101px;
+        animation: float22 10s ease-in-out infinite;
+    }
+    #responsiveLand2{
+        position: absolute;
+        width: 507px;
+        height: 231px;
+        left: -30px;
+        top: 190px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 67px;
+        line-height: 67px;
+        display: inline;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    #burger{
+        position: absolute;
+        top:20px;
+        right: -600px;
+        width: 600px;
+        height: 600px;
+        z-index: 10;
+        animation: float 6s ease-in-out infinite;
+    }
+    #responsiveLand{
+        position: absolute;
+        width: 507px;
+        height: 231px;
+        left: -30px;
+        top: 190px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 67px;
+        line-height: 67px;
+        display: inline;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    #onlyAt{
+        position: absolute;
+        width: 110.54px;
+        height: 31.48px;
+        left: -25px;
+        top: 400px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 15px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #000000;
+    }
+    #spFood{
+        position: absolute;
+        width: 378px;
+        height: 117px;
+        left: -25px;
+        top: 380px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #20BE58;
+    }
+    #side1{
+        position: absolute;
+        width: 100px;
+        height: 1800px;
+        left: 0px;
+        top: -102px;
+    }
+    #side2{
+        position: absolute;
+        width: 100px;
+        height: 1800px;
+        right: 0;
+        top: -102px;
+    }
+}
+
+
+
+
