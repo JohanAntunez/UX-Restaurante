@@ -1,5 +1,7 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <div class="wrapper">
-    <div class="cards_wrap">
+    <div class="cards_wrap" >
 
         <div class="card_item">
             <div class="card_inner h-100">
@@ -9,9 +11,9 @@
                 <div class="film">
                     Nuestra Mexican Burger con una mezcla de quesos cheddar y mozzarella...
                 </div>
-                <div class="containerBtn">
+                <div class="containerBtn" >
                     <button type="button" class="btnAdd" >Añadir al carrito</button>
-                    <button type="button" class="btnAdd">Ver detalles</button>
+                    <button type="button" class="btnAdd"  data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalles</button>
                 </div>
             </div>
         </div>
@@ -144,5 +146,109 @@
             </div>
         </div>
 
+        
+    </div>
+    <div class="container">
+        <!-- modalDetail -->
+        <div class="modal fade fontStyles" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row" style="position: relative;">
+                        <button type="button" class="btnCloseDetails" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <div class="col-12 col-md-4 d-flex align-items-center">
+                            <div id="carouselDetails" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselDetails" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner carouselSpace d-flex align-items-center">
+                                <div class="carousel-item active" data-bs-interval="2000" style="object-fit: contain;">
+                                <img src="assets/img/detail1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                <img src="assets/img/detail2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                <img src="assets/img/detail3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDetails" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselDetails" data-bs-slide="next">
+                                <span class="carousel-control-next-icon shadowControllers" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2>HAMBURGUESA MEXICANA</h2>
+                                </div>
+                                <div class="col-12 ">
+                                    <div id="detailDescription">
+                                    <span>
+                                        Nuestra Mexican Burger con una mezcla de quesos cheddar y mozzarella. 
+                                        ¡Olvídate por completo de la dieta!
+                                        Si quieres un fin de semana lleno de sabor, esta es la opción perfecta para ti.
+                                        <br><br>
+                                        Ingredientes:<br>
+                                        carne molida<br>
+                                        huevos<br>
+                                        cebolla picada<br>
+                                        lechuga italiana<br>
+                                        jitomate rebanado<br>
+                                        cebolla morada en rodajas<br>
+                                        láminas de queso cheddar<br>
+                                        chiles jalapeños rebanados<br>
+                                        1/2 taza de guacamole<br>
+                                        piezas de pan de hamburguesa
+
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-4">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="muted">$200.0</span>
+                                            <span style="display: inline;">$170.0 <p style="display: inline;" class="redColor">-15%</p></span>
+                                        </div>
+                                        <div class="offset-3 col-6">
+                                            <label class="col-12 labelTitulo">Cantidad<p style="display: inline;" class="redColor">*</p></label>
+                                            <select class="col-12 inputFormBasic" aria-label="size 3 select example" required>
+                                                <option selected value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-grid gap-2 d-sm-flex justify-content-end">
+                                    <button type="submit" class="btn buttonconfirmar">
+                                        <div class="d-flex align-items-center"style="margin: 0; color: #fff;">
+                                            <mat-icon style="overflow: visible;">payment</mat-icon>
+                                            Comprar ya
+                                        </div>
+                                    </button>
+                                    <button type="submit" class="btn buttonconfirmar">
+                                        <div class="d-flex align-items-center"style="margin: 0; color: #fff;">
+                                            <mat-icon style="overflow: visible;">shopping_cart</mat-icon>
+                                                Añadir
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
 </div>

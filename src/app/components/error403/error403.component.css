@@ -59,14 +59,14 @@
         width: 100%;
     }
     .btnYellow{
-        background: #FFBF00;
+        background: #E6AC00;
         color: white;
         font-size: 15 px;
         font-family: "Montserrat";
         border-radius: 13px;
         width: 95px;
-        border-color: #FFBF00;
         font-weight: 300;
+        border: 0px;
     }
 }
 
@@ -115,14 +115,14 @@
         z-index: 1;
     }
     .btnYellow{
-        background: #FFBF00;
+        background: #E6AC00;
         color: white;
         font-size: 15 px;
         font-family: "Montserrat";
         border-radius: 13px;
         width: 95px;
-        border-color: #FFBF00;
         font-weight: 300;
+        border: 0px;
     }
 }
 
@@ -170,14 +170,14 @@
         z-index: 1;
     }
     .btnYellow{
-        background: #FFBF00;
+        background: #E6AC00;
         color: white;
         font-size: 15 px;
         font-family: "Montserrat";
         border-radius: 13px;
         width: 95px;
-        border-color: #FFBF00;
         font-weight: 300;
+        border: 0px;
     }
 }
 
@@ -215,8 +215,8 @@
         position: absolute; 
         top:80px; 
         right: -500px;
-        width: 525px;
-        height: 575px;
+        width: 450px;
+        height: 500px;
         z-index: 0;
         animation: float 6s ease-in-out infinite;
     }
@@ -225,14 +225,14 @@
         z-index: 1;
     }
     .btnYellow{
-        background: #FFBF00;
+        background: #E6AC00;
         color: white;
         font-size: 15 px;
         font-family: "Montserrat";
         border-radius: 13px;
         width: 95px;
-        border-color: #FFBF00;
         font-weight: 300;
+        border: 0px;
     }
 }
 
