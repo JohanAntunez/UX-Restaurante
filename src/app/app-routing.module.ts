@@ -17,10 +17,14 @@ import { RegisterComponent } from './components/register/register.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { ListBebidasComponent } from './components/list-bebidas/list-bebidas.component';
+import { FormsComponent } from './components/forms/forms.component';
 
 const routes: Routes = [
   { path: 'dashboard',
     component: DashboardComponent,
+  },
+  { path: 'forms',
+    component: FormsComponent,
   },
   { path: 'list',
     component: ProductListComponent,
