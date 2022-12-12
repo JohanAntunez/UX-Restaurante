@@ -1,0 +1,283 @@
+<head>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+
+<!-- Sale & Revenue Start >-->
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-6 col-xl-3">
+            <div class="d-flex p-4; cardhead">
+                <i class="fa fa-chart-line fa-3x text-warning"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Today Sale</p>
+                    <h6 class="mb-0" style="font-size: 2em">$1234</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3">
+            <div class="d-flex p-4; cardhead">
+                <i class="fa fa-chart-bar fa-3x text-warning"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Total Sale</p>
+                    <h6 class="mb-0" style="font-size: 2em">$1234</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="d-flex p-4; cardhead">
+                <i class="fa fa-chart-area fa-3x text-warning"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Today Revenue</p>
+                    <h6 class="mb-0" style="font-size: 2em">$1234</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="d-flex p-4; cardhead">
+                <i class="fa fa-chart-pie fa-3x text-warning"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Total Revenue</p>
+                    <h6 class="mb-0" style="font-size: 2em">$1234</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sale & Revenue End -->
+
+<br />
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-xl-8">
+            <div class="bg-light text-center rounded p-4; graphicsSty">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0" style="
+              font-family: 'Montserrat';
+              font-weight: 1000;
+              padding-left: 3%;
+            ">
+                        Ventas anuales
+                    </h6>
+                    <a href="" style="
+              font-family: 'Montserrat';
+              font-weight: 1000;
+              padding-right: 3%;
+            ">Mostrar Todo</a>
+                </div>
+                <canvas baseChart [type]="'line'" [data]="lineChartData" [options]="lineChartOptions"
+                    [legend]="lineChartLegend">
+                </canvas>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-xl-4">
+            <div class="bg-light text-center rounded p-4; graphicsSty">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0" style="
+              font-family: 'Montserrat';
+              font-weight: 1000;
+              padding-left: 3%;
+            ">
+                        Platillos con más ventas
+                    </h6>
+                    <a href="" style="
+              font-family: 'Montserrat';
+              font-weight: 1000;
+              padding-right: 3%;
+            ">Mostrar Todo</a>
+                    <br /><br />
+                </div>
+                <canvas baseChart width="100" height="100" [datasets]="polarAreaChartDatasets"
+                    [labels]="polarAreaChartLabels" [legend]="polarAreaLegend" [options]="polarAreaOptions"
+                    [type]="'polarArea'">
+                </canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-warning; registerbtn" data-bs-toggle="modal" data-bs-target="#exampleModal" sty>
+    Registrar producto
+</button>
+
+<!-- Recent Sales Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4; tablesty">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0" style="font-family: 'Montserrat'; font-weight: 1000">
+                Ultimas ventas
+            </h6>
+        </div>
+        <div class="table-responsive">
+            <table class="table text-start align-middle table-bordered table-hover mb-0">
+                <thead>
+                    <tr class="text-dark">
+                        <th scope="col"></th>
+                        <th scope="col" class="alintx">Fecha</th>
+                        <th scope="col" class="alintx">ID</th>
+                        <th scope="col" class="alintx">Nombre</th>
+                        <th scope="col" class="alintx">Vendedor</th>
+                        <th scope="col" class="alintx">Total</th>
+                        <th scope="col" class="alintx">Cantidad</th>
+                        <th scope="col" class="alintx">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox" /></td>
+                        <td class="alintx">10-Diciembre-2022</td>
+                        <td class="alintx">INV-001</td>
+                        <td class="alintx">Pizza de peperoni</td>
+                        <td class="alintx">Jhoan</td>
+                        <td class="alintx">$170</td>
+                        <td class="alintx">2</td>
+                        <td class="alintx">
+                            <a class="btn btn-sm btn-warning" href="">Detalles</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox" /></td>
+                        <td class="alintx">10-Diciembre-2022</td>
+                        <td class="alintx">INV-004</td>
+                        <td class="alintx">Boneless</td>
+                        <td class="alintx">Tania</td>
+                        <td class="alintx">$80</td>
+                        <td class="alintx">4</td>
+                        <td class="alintx">
+                            <a class="btn btn-sm btn-warning" href="">Detalles</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox" /></td>
+                        <td class="alintx">10-Diciembre-2022</td>
+                        <td class="alintx">INV-003</td>
+                        <td class="alintx">Papas fritas</td>
+                        <td class="alintx">Javier</td>
+                        <td class="alintx">$354</td>
+                        <td class="alintx">21</td>
+                        <td class="alintx">
+                            <a class="btn btn-sm btn-warning" href="">Detalles</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox" /></td>
+                        <td class="alintx">10-Diciembre-2022</td>
+                        <td class="alintx">INV-005</td>
+                        <td class="alintx">Helado</td>
+                        <td class="alintx">Diego</td>
+                        <td class="alintx">$240</td>
+                        <td class="alintx">10</td>
+                        <td class="alintx">
+                            <a class="btn btn-sm btn-warning" href="">Detalles</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox" /></td>
+                        <td class="alintx">10-Diciembre-2022</td>
+                        <td class="alintx">INV-002</td>
+                        <td class="alintx">Western Bacon Cheeseburger</td>
+                        <td class="alintx">Nahum</td>
+                        <td class="alintx">$456</td>
+                        <td class="alintx">2</td>
+                        <td class="alintx">
+                            <a class="btn btn-sm btn-warning" href="">Detalles</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br /><br />
+</div>
+
+<!-- Recent Sales End -->
+
+<!-- Modal -->
+<div class="modal fade fontStyles" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <!-- <div class="modal fade show fontStyles" id="exampleModal" tabindex="-1" style="display: block;"  aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog"> -->
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-xl">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row" style="position: relative; align-items: center">
+                    <div>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">
+                            Close
+                        </button>
+                    </div>
+                    <br /><br />
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group" style="font-family: 'Montserrat'">
+                                    <label class="fontlabel" style="font-weight: 1000">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Pizza" style="
+                      border-color: black;
+                      border-width: 10%;
+                      background-color: #d9d9d9;
+                    " required />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group" style="font-family: 'Montserrat'">
+                                    <label class="fontlabel" style="font-weight: 1000">Identificador</label>
+                                    <input type="text" class="form-control" placeholder="ID" value="007" style="
+                      border-color: black;
+                      border-width: 10%;
+                      background-color: #d9d9d9;
+                    " required />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group" style="font-family: 'Montserrat'">
+                                    <label class="fontlabel" style="font-weight: 1000">Precio</label>
+                                    <input type="number" class="form-control" placeholder="124" style="
+                      border-color: black;
+                      border-width: 10%;
+                      background-color: #d9d9d9;
+                    " required />
+                                </div>
+                            </div>
+                        </div>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group" style="font-family: 'Montserrat'">
+                                    <label class="fontlabel" style="font-weight: 1000">Imagen</label>
+                                    <input type="file" id="img" name="img" accept="image/*" class="form-control" style="
+                      border-color: black;
+                      border-width: 10%;
+                      background-color: #d9d9d9;
+                    " required />
+                                </div>
+                            </div>
+
+                        </div>
+
+                        
+
+
+
+                        <div class="row">
+                            <BR><BR>
+                                <div>
+                                    <button type="submit" class="btn btn-warning">
+                                        Registrar
+                                    </button>
+                                </div>
+                        </div>
+
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
