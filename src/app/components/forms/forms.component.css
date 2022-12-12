@@ -1,0 +1,116 @@
+    .tituloForms {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    #ZonaInputs {
+        margin: 15px 0px 0px 0px;
+        margin: 15px 0px 15px 0px;
+    }
+
+    #labelTituloFormados {
+        margin-top: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+    }
+
+    #inputFormformado {
+        margin-top: 15px;
+        margin-left: 5px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+    }
+
+    .cardforms {
+        margin: 15px 0px 0px 0px;
+    }
+
+    .cardInputs {
+        margin: 15px 0px 0px 0px;
+    }
+
+    #labelTitulo {
+        margin: 15px 5px 5px 5px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    #labelTituloHorizontal {
+        margin: 20px 5px 5px 0px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    #inputFormBasic {
+        padding: 10px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+    }
+
+    #inputFormHorizontal {
+        margin: 20px 0px 0px 0px;
+        padding: 10px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+    }
+
+    #flexCheckDefault {
+        margin: 15px 0px 10px 0px;
+        padding: 10px
+    }
+
+    .form-check-label {
+        margin: 15px 10px 10px 15px;
+    }
+
+    .buttonconfirmar {
+        margin: 10px 10px 10px 0px;
+        width: 150px;
+        background: #E6AC00;
+        border-radius: 10px;
+        border: 0px;
+    }
+
+    .buttonconfirmarformado {
+        margin: 10px 10px 10px 0px;
+        height: 50px;
+        width: 100px;
+        background: #E6AC00;
+        border-radius: 10px;
+        border: 0px;
+    }
+
+    .buttoncancelar {
+        margin: 10px 10px 10px 0px;
+        width: 150px;
+        background: #D9D9D9;
+        border-radius: 10px;
+        border: 0px;
+    }
+
+    .form-check-input {
+        background: #FFBF01;
+        padding: 10px;
+        margin: 15px 15px 15px 1px ;
+    }
+    #exampleColorInput{
+     padding: 10px 10px 10px 10px;  
+     margin-left: 10px;
+    }
+
+    #validationFormCheck1{
+        font-family: 'Montserrat';
+        font-style: normal;
+    }

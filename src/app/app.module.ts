@@ -6,11 +6,16 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MenubarModule } from 'primeng/menubar';
+import {FormsComponent} from './components/forms/forms.component';
+import {checkoutComponent} from './components/checkout/checkout.component'
+import {CdkStepperModule} from '@angular/cdk/stepper';
+import {ReactiveFormsModule } from '@angular/forms';
+import {MatProgressBarModule} from '@angular/material/progress-bar'
+import {MatIconModule} from '@angular/material/icon';
 import { Error404Component } from './components/error404/error404.component';
 import { Error403Component } from './components/error403/error403.component';
 import { Error500Component } from './components/error500/error500.component';
 import { DetailsComponent } from './components/details/details.component';
-import { MatIconModule} from '@angular/material/icon';
 import { InboxEmailComponent } from './components/inbox-email/inbox-email.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PricingComponent } from './components/pricing/pricing.component';
@@ -26,6 +31,8 @@ import { RegisterComponent } from './components/register/register.component';
     AppComponent,
     FooterComponent,
     HeaderComponent,
+    FormsComponent,
+    checkoutComponent,
     Error404Component,
     Error403Component,
     Error500Component,
@@ -43,6 +50,9 @@ import { RegisterComponent } from './components/register/register.component';
     BrowserModule,
     AppRoutingModule,
     MenubarModule,
+    CdkStepperModule,
+    ReactiveFormsModule,
+    MatProgressBarModule,
     MatIconModule,
     NgChartsModule,
   ],
