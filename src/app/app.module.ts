@@ -18,6 +18,7 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { ChatComponent } from './components/chat/chat.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { ChatComponent } from './components/chat/chat.component';
     DashboardComponent,
     UserProfileComponent,
     ChatComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
