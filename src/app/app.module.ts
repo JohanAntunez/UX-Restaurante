@@ -1,3 +1,4 @@
+import { ProductListComponent } from './components/product-list/product-list.component';
 import { NgChartsModule } from 'ng2-charts';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,7 +12,7 @@ import {checkoutComponent} from './components/checkout/checkout.component'
 import {CdkStepperModule} from '@angular/cdk/stepper';
 import {ReactiveFormsModule } from '@angular/forms';
 import {MatProgressBarModule} from '@angular/material/progress-bar'
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon'
 import { Error404Component } from './components/error404/error404.component';
 import { Error403Component } from './components/error403/error403.component';
 import { Error500Component } from './components/error500/error500.component';
@@ -47,7 +48,8 @@ import { ListBebidasComponent } from './components/list-bebidas/list-bebidas.com
     ChatComponent,
     RegisterComponent,
     LandingComponent,
-    ListBebidasComponent
+    ListBebidasComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +59,7 @@ import { ListBebidasComponent } from './components/list-bebidas/list-bebidas.com
     ReactiveFormsModule,
     MatProgressBarModule,
     MatIconModule,
-    NgChartsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

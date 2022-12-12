@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css', '../details/details.component.css']
 })
 export class ProductListComponent {
 
