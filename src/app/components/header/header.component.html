@@ -23,67 +23,67 @@ style="background-color: white; box-shadow: 2px 0px 5px 2px rgba(0,0,0,0.3) !imp
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link active" type="button" (click)="redirect('dashboard')">Dashboard</a>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Productos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" type="button" (click)="redirect('list')">Comida</a></li>
+            <li><a class="dropdown-item" type="button" (click)="redirect('error500')">Bebida</a></li>
+          </ul>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link active" type="button" (click)="redirect('detail')">Detail</a>
+        </li>-->
         <li class="nav-item">
-          <a class="nav-link active" href="#">Dashboard</a>
+          <a class="nav-link active" type="button" (click)="redirect('pricing')">Pricing</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Product List</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Detail</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Detail</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Checkout</a>
-        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link active" type="button" (click)="redirect('check')">Checkout</a>
+        </li>-->
 
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Error
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Error 404</a></li>
-            <li><a class="dropdown-item" href="#">Error 500</a></li>
-            <li><a class="dropdown-item" href="#">Error 403</a></li>
+            <li><a class="dropdown-item" type="button" (click)="redirect('error404')">Error 404</a></li>
+            <li><a class="dropdown-item" type="button" (click)="redirect('error500')">Error 500</a></li>
+            <li><a class="dropdown-item" type="button" (click)="redirect('error403')">Error 403</a></li>
           </ul>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="material-icons">shop</i>          
+          <a class="nav-link" type="button" (click)="redirect('check')" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="material-icons">shop</i>
           </a>
         </li>
 
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="material-icons">person</i>          
+            <i class="material-icons">person</i>
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Login</a></li>
-            <li><a class="dropdown-item" href="#">Register</a></li>
-            <li><a class="dropdown-item" href="#">User Profile</a></li>
-            <li><a class="dropdown-item" href="#">Chat</a></li>
-            <li><a class="dropdown-item" href="#">Email</a></li>
+            <li><a class="dropdown-item" type="button" (click)="redirect('login')">Login</a></li>
+            <li><a class="dropdown-item" type="button" (click)="redirect('register')">Register</a></li>
+            <li><a class="dropdown-item" type="button" (click)="redirect('userProfile')">User Profile</a></li>
+            <li><a class="dropdown-item" type="button" (click)="redirect('chat')">Chat</a></li>
+            <li><a class="dropdown-item" type="button" (click)="redirect('inbox')">Email</a></li>
           </ul>
         </li>
 
-        
+
         <li class="nav-item dropdown" >
-          
+
           <a type="button" class="nav-link" data-bs-toggle="dropdown"
           aria-expanded="false" style="color: #1AC858;" >
             <i class="material-icons" style="position: relative;">notifications
               <span class="intermitente position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
               </span>
             </i>
-            
+
           </a>
           <ul class="dropdown-menu justify-content-center notificaciones">
             <li><a class="dropdown-item" href="#">
@@ -93,31 +93,31 @@ style="background-color: white; box-shadow: 2px 0px 5px 2px rgba(0,0,0,0.3) !imp
 
             <li><a class="dropdown-item" href="#">
               <i class="material-icons" style="display:inline-block;vertical-align:top; color: #1AC858;">check_circle</i>
-              <span class="demo-text"> Orden recibida</span>              
+              <span class="demo-text"> Orden recibida</span>
               <span class="time"> (Hace 30 min)</span>
             </a>
             </li>
             <li><a class="dropdown-item" href="#">
               <i class="material-icons" style="display:inline-block;vertical-align:top; color: red;">error</i>
-              <span class="demo-text"> Pedido cancelado</span>              
+              <span class="demo-text"> Pedido cancelado</span>
               <span class="time"> (Hace 4 hrs)</span>
             </a>
             </li>
             <li><a class="dropdown-item" href="#">
               <i class="material-icons" style="display:inline-block;vertical-align:top; color: #56AFF0;">add_circle</i>
-              <span class="demo-text"> Nuevo cliente registrado</span>              
+              <span class="demo-text"> Nuevo cliente registrado</span>
               <span class="time"> (Ayer)</span>
             </a>
             </li>
             <li><a class="dropdown-item" href="#">
               <i class="material-icons" style="display:inline-block;vertical-align:top; color: black;">new_releases</i>
-              <span class="demo-text"> Nueva promoción disponible</span>              
+              <span class="demo-text"> Nueva promoción disponible</span>
               <span class="time"> (3 dic. alas 1.46 p.m.)</span>
             </a>
             </li>
             <li><a class="dropdown-item" href="#">
               <i class="material-icons" style="display:inline-block;vertical-align:top; color: orange;">local_shipping</i>
-              <span class="demo-text"> Entrega exitosa</span>              
+              <span class="demo-text"> Entrega exitosa</span>
               <span class="time"> (1 dic. alas 3.17 p.m.)</span>
             </a>
             </li>
@@ -130,8 +130,8 @@ style="background-color: white; box-shadow: 2px 0px 5px 2px rgba(0,0,0,0.3) !imp
             </ul>
           </li>
       </ul>
-      
-        <button class="btn-login" type="button">Login</button>
+
+        <!--<button class="btn-login" type="button">Login</button>-->
     </div>
   </div>
 </nav>

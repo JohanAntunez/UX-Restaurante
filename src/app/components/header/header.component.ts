@@ -55,10 +55,13 @@ export class HeaderComponent implements OnInit {
   }
 
   logOut() {
-
     this.router.navigate(['/']);
   }
   returnRoute(){
     this.location.back()
+  }
+
+  redirect(place: string) {
+    this.router.navigate([place]);
   }
 }
