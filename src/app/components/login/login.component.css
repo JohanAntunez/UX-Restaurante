@@ -1,0 +1,20 @@
+.fontlabel {
+    font-weight: 1000;
+    font-family: 'Montserrat';
+  }
+.fonttitle{
+    font-family: 'Montserrat';
+    font-weight: 1000;
+}
+
+
+.btn-login{
+    font-style: italic;
+    color: white;
+    font-weight: 200;
+    font-family: 'Montserrat';
+}
+.register{
+    font-family: 'Montserrat';
+
+}

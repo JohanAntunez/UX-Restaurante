@@ -1,0 +1,49 @@
+.primer-pricing{
+    color: #FFBF00;
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+.precio-pricing{
+    font-family: "Montserrat";
+}
+.promo{
+    font-family: "Montserrat";
+    font-style: italic;
+}
+.elemento{
+    font-family: "Montserrat";
+}
+
+.elemento-sorpresa{
+    color: red;
+}
+.btn-primer-pricing{
+    background: #FFBF00;
+    color: white;
+    font-family: "Montserrat";
+}
+
+.segundo-pricing{
+    color: #1AC858;
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+.btn-segundo-pricing{
+    background: #1AC858;
+    color: white;
+    font-family: "Montserrat";
+}
+
+
+.tercer-pricing{
+    color: #56AFF0;
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+.btn-tercer-pricing{
+    background: #56AFF0;
+    color: white;
+    font-family: "Montserrat";
+}
