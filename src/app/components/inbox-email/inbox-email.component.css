@@ -1,0 +1,641 @@
+.reactHoverSidebar:hover {
+    background-color: #4fcb7b;
+}
+.badgeReactHoverSidebar{
+    background-color: #4fcb7b;
+    color: #ffffff;
+}
+.reactHoverSidebar:hover .badgeReactHoverSidebar{
+    background-color: #505050;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 0.3rem 0.1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.sendEmail:hover{
+    animation: shake 0.5s infinite;
+}
+@media screen and (max-width:799.9px){
+    .adjustableSize{
+        width: 4rem;
+    }
+    .hideSmallDevice{
+        display: none;
+    }
+    .sendEmail{
+        background-color: #4fcb7b;
+        color: #ffffff;
+        border-radius: 5%;
+    }
+    .textAdjustable{
+        padding-left: 3rem;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:999.9px){
+    .adjustableSize{
+        width: 8rem;
+    }
+    div.hideSmallDevice > span:first-child{
+        display: none;
+    }
+    div.hideSmallDevice > span{
+        left: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: .5rem;
+    }
+    .sendEmail{
+        background-color: #4fcb7b;
+        color: #ffffff;
+        border-radius: 5%;
+    }
+    
+    .sendEmail div.col-2{
+        padding-left: 20px;
+    }
+    .textAdjustable{
+        padding-left: 3rem;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) and (max-width:1199.9px){
+    .adjustableSize{
+        width: 12rem;
+    }
+    div.hideSmallDevice > span:first-child{
+        margin-left: 1rem;
+    }
+    .sendEmail{
+        background-color: #4fcb7b;
+        color: #ffffff;
+        padding: 0px 10px;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .textAdjustable{
+        padding-left: 3rem;
+    }
+    .adjustableSizeContent{
+        position: absolute;
+        top: 0px;
+        left: -2rem;
+        width: 101.9%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .adjustableSize{
+        width: 13rem;
+    }
+    div.hideSmallDevice > span:first-child{
+        margin-left: 1rem;
+    }
+    .sendEmail{
+        background-color: #4fcb7b;
+        color: #ffffff;
+        padding: 0px 10px;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .textAdjustable{
+        padding-left: 3rem;
+    }
+    .adjustableSizeContent{
+        position: absolute;
+        top: 0px;
+        left: -2rem;
+        width: 101.9%;
+    }
+    .table-responsive table{
+        overflow: auto;
+    }
+}
+@media screen and (min-width: 378px)  and (max-width:767.9px){
+    .adjustableSizeContent{
+        position: absolute;
+        top: 0px;
+        left: -2rem;
+        width: 99%;
+    }
+    .contentResponsive{
+        height: 25rem;
+        overflow: auto;
+    }
+    .contentResponsive .table-responsive{
+        width: 40rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:799.9px){
+    .adjustableSizeContent{
+        position: absolute;
+        top: 0px;
+        left: -2rem;
+        width: 99%;
+    }
+    .contentResponsive{
+        height: 25rem;
+        overflow: auto;
+    }
+    .contentResponsive .table-responsive{
+        width: 40rem;
+    }
+}
+@media screen and (min-width: 800px) and (max-width:991.9px){
+    .adjustableSizeContent{
+        position: absolute;
+        top: 0px;
+        left: 1rem;
+        width: 94%;
+    }
+    .contentResponsive{
+        height: 25rem;
+        overflow: auto;
+    }
+    .contentResponsive .table-responsive{
+        width: 40rem;
+    }
+}
+@media screen and (min-width: 992px) and (max-width:1399.9px){
+    .adjustableSizeContent{
+        position: absolute;
+        top: 0px;
+        left: 1rem;
+        width: 96%;
+    }
+    .contentResponsive{
+        height: 29rem;
+        overflow: auto;
+    }
+    .contentResponsive .table-responsive{
+        width: 54rem;
+    }
+}
+@media screen and (min-width:1400px){
+    .adjustableSizeContent{
+        position: absolute;
+        top: 0px;
+        left: 1rem;
+        width: 96%;
+    }
+    .contentResponsive{
+        height: 29rem;
+        overflow: auto;
+    }
+    
+}
+@keyframes shake{
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* --- */
+.user-head .inbox-avatar img {
+    border-radius: 4px;
+}
+.user-head .user-name {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+.user-head .user-name h5 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.user-head .user-name h5 a {
+    color: #fff;
+}
+.user-head .user-name span a {
+    color: #87e2e7;
+    font-size: 12px;
+}
+a.mail-dropdown {
+    background: none repeat scroll 0 0 #038587;
+    border-radius: 2px;
+    color: #01a7b3;
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 3px 5px;
+}
+.inbox-body {
+    padding: 20px;
+}
+.btn-compose {
+    background: none repeat scroll 0 0 #ff6c60;
+    color: #fff;
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+}
+.btn-compose:hover {
+    background: none repeat scroll 0 0 #f5675c;
+    color: #fff;
+}
+ul.inbox-nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.inbox-divider {
+    border-bottom: 1px solid #d5d8df;
+}
+ul.inbox-nav li {
+    display: inline-block;
+    line-height: 45px;
+    width: 100%;
+}
+ul.inbox-nav li a {
+    color: #6a6a6a;
+    display: inline-block;
+    line-height: 45px;
+    padding: 0 20px;
+    width: 100%;
+}
+ul.inbox-nav li a:hover, ul.inbox-nav li.active a, ul.inbox-nav li a:focus {
+    background: none repeat scroll 0 0 #d5d7de;
+    color: #6a6a6a;
+}
+ul.inbox-nav li a i {
+    color: #6a6a6a;
+    font-size: 16px;
+    padding-right: 10px;
+}
+ul.inbox-nav li a span.label {
+    margin-top: 13px;
+}
+ul.labels-info li h4 {
+    color: #5c5c5e;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+ul.labels-info li {
+    margin: 0;
+}
+ul.labels-info li a {
+    border-radius: 0;
+    color: #6a6a6a;
+}
+ul.labels-info li a:hover, ul.labels-info li a:focus {
+    background: none repeat scroll 0 0 #d5d7de;
+    color: #6a6a6a;
+}
+ul.labels-info li a i {
+    padding-right: 10px;
+}
+.nav.nav-pills.nav-stacked.labels-info p {
+    color: #9d9f9e;
+    font-size: 11px;
+    margin-bottom: 0;
+    padding: 0 22px;
+}
+.inbox-head {
+    background: none repeat scroll 0 0 #41cac0;
+    border-radius: 0 4px 0 0;
+    color: #fff;
+    min-height: 80px;
+    padding: 20px;
+}
+.inbox-head h3 {
+    display: inline-block;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 6px;
+}
+.inbox-head .sr-input {
+    border: medium none;
+    border-radius: 4px 0 0 4px;
+    box-shadow: none;
+    color: #8a8a8a;
+    float: left;
+    height: 40px;
+    padding: 0 10px;
+}
+.inbox-head .sr-btn {
+    background: none repeat scroll 0 0 #038587;
+    border: medium none;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    height: 40px;
+    padding: 0 20px;
+}
+.table-inbox {
+    border: 1px solid #d3d3d3;
+    margin-bottom: 0;
+}
+.table-inbox tr td {
+    padding: 12px !important;
+}
+.table-inbox tr td:hover {
+    cursor: pointer;
+}
+.table-inbox tr td .fa-star.inbox-started, .table-inbox tr td .fa-star:hover {
+    color: #f78a09;
+}
+.table-inbox tr td .fa-star {
+    color: #d5d5d5;
+}
+.table-inbox tr.unread td {
+    background: none repeat scroll 0 0 #f7f7f7;
+    font-weight: 600;
+}
+ul.inbox-pagination {
+    float: right;
+}
+ul.inbox-pagination li {
+    float: left;
+}
+.mail-option {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.mail-option .chk-all, .mail-option .btn-group {
+    margin-right: 5px;
+}
+.mail-option .chk-all, .mail-option .btn-group a.btn {
+    background: none repeat scroll 0 0 #fcfcfc;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px !important;
+    color: #afafaf;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.inbox-pagination a.np-btn {
+    background: none repeat scroll 0 0 #fcfcfc;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px !important;
+    color: #afafaf;
+    display: inline-block;
+    padding: 5px 15px;
+}
+.mail-option .chk-all input[type="checkbox"] {
+    margin-top: 0;
+}
+.mail-option .btn-group a.all {
+    border: medium none;
+    padding: 0;
+}
+.inbox-pagination a.np-btn {
+    margin-left: 5px;
+}
+.inbox-pagination li span {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 7px;
+}
+.fileinput-button {
+    background: none repeat scroll 0 0 #eeeeee;
+    border: 1px solid #e6e6e6;
+}
+.inbox-body .modal .modal-body input, .inbox-body .modal .modal-body textarea {
+    border: 1px solid #e6e6e6;
+    box-shadow: none;
+}
+.btn-send, .btn-send:hover {
+    background: none repeat scroll 0 0 #038587;
+    color: #fff;
+}
+.btn-send:hover {
+    background: none repeat scroll 0 0 #038587;
+}
+.modal-header h4.modal-title {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 300;
+}
+.modal-body label {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+}
+.heading-inbox h4 {
+    border-bottom: 1px solid #ddd;
+    color: #444;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.sender-info {
+    margin-bottom: 20px;
+}
+.sender-info img {
+    height: 30px;
+    width: 30px;
+}
+.sender-dropdown {
+    background: none repeat scroll 0 0 #eaeaea;
+    color: #777;
+    font-size: 10px;
+    padding: 0 3px;
+}
+.view-mail a {
+    color: #ff6c60;
+}
+.attachment-mail {
+    margin-top: 30px;
+}
+.attachment-mail ul {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.attachment-mail ul li {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 150px;
+}
+.attachment-mail ul li img {
+    width: 100%;
+}
+.attachment-mail ul li span {
+    float: right;
+}
+.attachment-mail .file-name {
+    float: left;
+}
+.attachment-mail .links {
+    display: inline-block;
+    width: 100%;
+}
+
+.fileinput-button {
+    float: left;
+    margin-right: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.fileinput-button input {
+    cursor: pointer;
+    direction: ltr;
+    font-size: 23px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-300px, 0px) scale(4);
+}
+.fileupload-buttonbar .btn, .fileupload-buttonbar .toggle {
+    margin-bottom: 5px;
+}
+.files .progress {
+    width: 200px;
+}
+.fileupload-processing .fileupload-loading {
+    display: block;
+}
+* html .fileinput-button {
+    line-height: 24px;
+    margin: 1px -3px 0 0;
+}
+* + html .fileinput-button {
+    margin: 1px 0 0;
+    padding: 2px 15px;
+}
+@media (max-width: 767px) {
+.files .btn span {
+    display: none;
+}
+.files .preview * {
+    width: 40px;
+}
+.files .name * {
+    display: inline-block;
+    width: 80px;
+    word-wrap: break-word;
+}
+.files .progress {
+    width: 20px;
+}
+.files .delete {
+    width: 60px;
+}
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*XS*/
+@media (min-width:50px){
+    .border-card-1{
+        border-top-right-radius: 10px !important;
+        border-top-left-radius: 10px !important;
+    }
+    .border-card-2{
+        border-bottom-right-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+    }
+}
+
+/* SM */
+@media (min-width:576px){
+    .border-card-1{
+        border-bottom-right-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 10px !important;
+        border-top-left-radius: 10px !important;
+    }
+    .border-card-2{
+        border-bottom-right-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        border-bottom-left-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+    }
+}
+
+/* MD */
+@media (min-width:768px) {
+    .border-card-1{
+        border-bottom-right-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 10px !important;
+        border-top-left-radius: 10px !important;
+    }
+    .border-card-2{
+        border-bottom-right-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        border-bottom-left-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+    }
+}
+/* LG */
+@media (min-width:992px) {
+    .border-card-1{
+        border-bottom-right-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 10px !important;
+        border-top-left-radius: 10px !important;
+    }
+    .border-card-2{
+        border-bottom-right-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        border-bottom-left-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+    }
+}
+/* XL */
+@media (min-width:1200px) {
+    .border-card-1{
+        border-bottom-right-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 10px !important;
+        border-top-left-radius: 10px !important;
+    }
+    .border-card-2{
+        border-bottom-right-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        border-bottom-left-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+    }
+}
+
+
+/*XS*/
+@media (min-width:50px){
+    .border-card-header-1{
+        border-top-right-radius: 10px !important;
+        border-top-left-radius: 10px !important;
+    }
+    .border-card-header-2{
+        border-radius: 0px;
+    }
+}
+
+/* SM */
+@media (min-width:576px){
+    
+}
+
+/* MD */
+@media (min-width:768px) {
+    .border-card-header-1{
+        border-top-right-radius: 0px !important;
+        border-top-left-radius: 10px !important;
+    }
+    .border-card-header-2{
+        border-top-right-radius: 10px !important;
+        border-top-left-radius: 0px !important;
+    }
+}
+/* LG */
+@media (min-width:992px) {
+   
+}
+/* XL */
+@media (min-width:1200px) {
+    
+}
+
